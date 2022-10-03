@@ -67,9 +67,9 @@ LDIR_freebsd?=share/lua/$(LUAV)
 # LUAINC_mingw:
 # /opt/local/include
 LUAINC_mingw_base?=/usr/include
-LUAINC_mingw?=$(LUAINC_mingw_base)/lua/$(LUAV) $(LUAINC_mingw_base)/lua$(LUAV)
+LUAINC_mingw?=$(LUAINC_mingw_base) $(LUAINC_mingw_base)
 LUALIB_mingw_base?=/usr/bin
-LUALIB_mingw?=$(LUALIB_mingw_base)/lua/$(LUAV)/lua$(subst .,,$(LUAV)).dll
+LUALIB_mingw?=$(LUALIB_mingw_base)/lua$(subst .,,$(LUAV)).dll
 LUAPREFIX_mingw?=/usr
 CDIR_mingw?=lua/$(LUAV)
 LDIR_mingw?=lua/$(LUAV)/lua
